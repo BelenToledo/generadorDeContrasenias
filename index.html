@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>GENERADORDE CONTRASENIAS</title>
 </head>
+
 <body>
+    <section class="generador-contrasenia">
+        <div class="generador">
+            </form>
+            <input class="input-generador">
+            <form>
+                <div class="btns-copyregenerador">
+                    <button class="btn-copy"><i class="fa-regular fa-copy copy"></i></button>
+                    <button class="btn-regenerador"><i class="fa-sharp fa-solid fa-arrow-rotate-right"></i></button>
+                </div>
+        </div>
+        <div class="div-personalizador">
+            <h2>Personalice su contraseña</h2>
 
+            <form>
+                <div class="opciones">
+                    <div class="longitud">
+                        <h3>Longitud</h3>
 
+                        <label><input type="radio" name="longitud" value="12 caracteres" /> 12 caracteres</label>
+                        <label> <input type="radio" name="longitud" value="9 caracteres" />  9 caracteres</label>
+                        <label> <input type="radio" name="longitud" value="6 caracteres" />  6 caracteres</label>
 
+                    </div>
+
+                    <div class="reglas">
+                        <h3>Reglas</h3>
+
+                        <label> <input type="radio" name="reglas" value="solo letras" /> Solo letras</label>
+                        <label> <input type="radio" name="reglas" value="solo letras" /> Lectura simple</label>
+                        <label> <input type="radio" value="reglas" value="solo letras" /> Todos los caracteres</label>
+
+                    </div>
+
+                    <div class="caracteres">
+                        <h3>Caracteres</h3>
+
+                        <label class="label-caracteres"> <input type="checkbox" name="caracteres" value="mayusculas" class="checkbox" /> Mayúsculas </label>
+                        <label class="label-caracteres"> <input type="checkbox" name="caracteres" value="minusculas" class="checkbox" /> Minúsculas </label>
+                        <label class="label-caracteres"> <input type="checkbox" name="caracteres" value="numeros" class="checkbox"/> Numeros </label>
+                        <label class="label-caracteres"> <input type="checkbox" name="caracteres" value="simbolos" class="checkbox"/> Simbolos </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 
     <script src="JS/script.js"></script>
-    
 </body>
+
 </html>
