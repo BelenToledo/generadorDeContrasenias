@@ -21,6 +21,7 @@ const checkNumeros = $("#numeros")
 const checkSimbolos =$("#simbolos")
 
 let password = []
+
 ///******ARRAYS DECLARADOS*******/
 
 // const  arrayLecturaSimple = arrayMayusculas.concat(arrayNumeros)
@@ -34,32 +35,44 @@ let simbolos = " ! @ $ % ^ & * ( ) - _ = + { } [ ] ; , . < > ? / *"
 
 //*************FX SELECCION DE CARACTERES y REGLAS*****************/
 
-for(const btn of btns){
-     if(btn.addEventListener("click", (e)=>{
-        prueba()
+for (const btn of btns) {
+      if (btn.addEventListener("click", (e) => {
+    
+        const mays=  prueba2(checkMayusculas, mayusculas);
+        const min= prueba2(checkMinusculas, minusculas);
+        const num = prueba2(checkNumeros, numeros);
+        const simb= prueba2(checkSimbolos, simbolos);
+
+
+        console.log(`${mays} ${min} ${num} ${simb}`)
+  
     })
-) prueba()
+  )
+    prueba();
 }  
 
 
-const prueba =()=>{
-        for(const input of btns){
-            if (input.checked){
-                console.log(true)
-            } else {
-                        false
-
-                     }
- }
+let prueba2 =(input, str)=>{
+    if(input.checked == true){
+        console.log(str)
+    return str
 }
-prueba()
+}
+
+const generar=()=>{
+    alert("funciono")
+
+}
 
 
 
 
-// btnGenerador.addEventListener("click", function(){
-    
-// })
+
+
+
+btnGenerador.addEventListener("click", function(){
+    generar()
+})
 
 
 

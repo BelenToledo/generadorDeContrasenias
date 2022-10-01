@@ -10,13 +10,16 @@ let arrinputs=[]
 let mays = "ABC"
 let min = "abc"
 let simb = " / . ,"
+window.addEventListener("DOMContentLoaded", ()=>{
+    checkbox.addEventListener("click",()=>{})
+    prueba(checkbox, mays)
 
+})
 const prueba =(checkbox,str)=>{
-    if(checkbox.checked){
+    if(checkbox.checked==true){
         console.log(arrinputs.push(str))
     }
 }
- prueba(checkbox, mays)
 console.log( arrinputs)
 
 
