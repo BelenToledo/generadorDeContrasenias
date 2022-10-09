@@ -24,7 +24,16 @@ console.log( arrinputs)
 
 
 
-
+// const prueba = () => {
+//   for (const input of btns) {
+//     if (input.checked) {
+//       console.log(true)
+//       return true;
+//     } else {
+//       false;
+//     }
+//   }
+// };
 
 // for( fx in input1){
 //             if(input1[fx] == true){
